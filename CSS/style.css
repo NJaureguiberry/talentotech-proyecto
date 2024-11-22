@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.703);
+}
+
+a:active {
+   color: black;
+}
+
+
+.logo-nav{
+    width: 20vw;
+    height: auto;
+}
+
+.top-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    list-style: none;
+    font-size: 25px;
+}
+
+nav ul li{
+    list-style: none;
+    padding-top: 50px;
+}
+
+.triptico{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.triptico h1{
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+.triptico-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+
+.triptico-container img{
+    width: 20vw;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.triptico-container img:hover{
+    filter: grayscale(0%);
+}
+
+.triptico-byn{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: raw;
+    justify-content: center;
+    gap: 25px;
+}
+
+.triptico-byn img{
+    width: 20vw;
+    height: auto;
+}
+
+.video-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 45px;
+    width: fit-content;
+    padding: 15px;
+}
+
+.video-text{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: left;
+    text-align: start;
+    letter-spacing: 0.06em;
+    word-spacing: 0.2em;
+    line-height: 1.6em;
+    padding: 7px;
+    margin: 0px;
+    background-color: rgba(55, 55, 55, 0.106);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.405);
+    border-radius: 5px;
+
+}
+
+.video-text h2{
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.video-text{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+iframe{
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.405);
+  border-radius: 8px;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    gap: 20px;
+    line-height: 0em;
+    margin-top: 50px;
+    padding-left: 5px;
+    background-color: rgba(75, 75, 75, 0.046);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.023);
+    /*border-radius: 5px;*/
+}
+
+.logo-footer{
+    width: 10vw;
+    height: auto;
+}
+
+
+/*About*/
+
+.biography{
+    display: flex;
+    flex-direction:row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 45px;
+    width: fit-content;
+    padding: 15px;
+}
+
+.biography-text{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: left;
+    text-align: start;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.06em;
+    word-spacing: 0.2em;
+    line-height: 2.3em;
+    padding: 7px 35px 7px 7px;
+    margin: 0px;
+
+}
+
+.biography-text h1{
+    font-size: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.biography img{
+    width: 30vw;
+    height: auto;
+}
+
+.fa-instagram {
+    font-size: 40px;
+    color: #E4405F;
+}
+
+.fa-instagram:hover{
+    color: #e4405eb1;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        margin-top: 20px; /* Reducir margen superior */
+        padding: 0 10px; /* Añadir un poco de espacio interno */
+    }
+
+    .logo-nav {
+        width: 50vw; /* Ajustar tamaño del logo */
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambiar navegación a columna */
+        gap: 20px; /* Espaciado más pequeño entre los elementos */
+        font-size: 18px; /* Reducir tamaño de fuente */
+    }
+
+    .triptico-container img,
+    .triptico-byn img {
+        width: 90vw; /* Imágenes más grandes para ocupar ancho completo */
+    }
+
+    .triptico h1 {
+        font-size: 16px; /* Títulos más pequeños */
+    }
+
+    .video-container {
+        flex-direction: column; /* Alinear video y texto en columna */
+        gap: 20px; /* Reducir espacio entre ellos */
+    }
+
+    .video-text {
+        font-size: 14px; /* Reducir tamaño del texto */
+        padding: 10px; /* Ajustar espacio interno */
+    }
+
+    .video-text h2 {
+        font-size: 20px; /* Reducir tamaño de los títulos */
+    }
+
+    footer {
+        flex-direction: column; /* Apilar el footer */
+        gap: 10px; /* Espaciado menor entre elementos */
+        padding: 10px; /* Reducir el padding general */
+    }
+
+    .logo-footer {
+        width: 30vw; /* Ajustar tamaño del logo en el footer */
+    }
+
+    .biography {
+        flex-direction: column; /* Cambiar a columna para aprovechar mejor el espacio */
+        align-items: center; /* Centrar los elementos */
+        gap: 20px; /* Reducir el espacio entre los elementos */
+        padding: 10px; /* Menor espacio interno */
+    }
+
+    .biography-text {
+        font-size: 14px; /* Reducir el tamaño del texto */
+        padding: 5px 15px; /* Ajustar padding para pantallas pequeñas */
+        text-align: center; /* Centrar texto en dispositivos pequeños */
+    }
+
+    .biography-text h1 {
+        font-size: 24px; /* Reducir tamaño del título */
+    }
+
+    .biography img {
+        width: 80vw; /* Imágenes más grandes para ocupar el ancho disponible */
+    }
+
+    .fa-instagram {
+        font-size: 30px; /* Iconos más pequeños */
+    }
+}
+
+/* Breakpoint para pantallas medianas (tablets, <= 1024px) */
+@media (max-width: 1024px) {
+    .logo-nav {
+        width: 30vw; /* Logo más grande que en móviles */
+    }
+
+    nav ul {
+        gap: 40px; /* Menor espacio entre elementos */
+        font-size: 22px;
+    }
+
+    .triptico-container img,
+    .triptico-byn img {
+        width: 30vw; /* Imágenes más grandes que en escritorio */
+    }
+
+    .video-text {
+        font-size: 16px; /* Texto ajustado */
+    }
+
+    .video-text h2 {
+        font-size: 30px; /* Títulos ajustados */
+    }
+
+    footer {
+        flex-wrap: wrap; /* Footer adaptable */
+        gap: 15px;
+    }
+
+    .logo-footer {
+        width: 20vw; /* Logo ajustado */
+    }
+
+    .biography {
+        flex-direction: column; /* Cambiar a columna para adaptarse mejor */
+        align-items: center; /* Centrar los elementos */
+        gap: 30px; /* Reducir el espacio entre los elementos */
+        padding: 20px; /* Ajustar el espacio interno */
+    }
+
+    .biography-text {
+        font-size: 16px; /* Reducir ligeramente el tamaño del texto */
+        padding: 10px 20px; /* Menor padding para mayor flexibilidad */
+        text-align: center; /* Centrar el texto */
+    }
+
+    .biography-text h1 {
+        font-size: 36px; /* Reducir el tamaño del título */
+    }
+
+    .biography img {
+        width: 50vw; /* Imagen más grande, pero no tan extrema como en móviles */
+    }
+
+    .fa-instagram {
+        font-size: 35px; /* Tamaño del icono ligeramente menor */
+    }
+
+}
